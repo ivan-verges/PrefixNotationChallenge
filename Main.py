@@ -74,8 +74,8 @@ def combine(expressions: list, variables: list, key: str):
     # Returns the Extended List
     return results
 
-# Receives the Expression and Variables, and Defines the Strategy to Calculate the Results
-def main_method(expression: str, variables: dict):
+# Receives the Expression (Required) and Variables (Optional), and Defines the Strategy to Calculate the Results
+def main_method(expression: str, variables: dict = {}):
     # Defines an Empty List to Store Teporal Elements to be Returned
     results = []
 
@@ -109,6 +109,7 @@ def test(calculated, expected):
 # Calls the Main_Method to Test the Algorithm
 if __name__ == "__main__":
     # Tests
+    test(main_method("* 3 5"), 15)
     test(main_method("+ 1 2", {}), 3)
     test(main_method("* + 1 2 3", {}), 9)
     test(main_method("- * + 1 2 3 4", {}), 5)
