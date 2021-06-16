@@ -6,6 +6,7 @@ This is a challenge that aims to solve basic math operations writen with the Pre
 To solve the challenge i've implemented some interesting things with Python 3, such as:
 - Lambda Expressions
 - Text Splitting
+- Data Slicing
 - Dictionaries
 - Lists
 - Stacks
